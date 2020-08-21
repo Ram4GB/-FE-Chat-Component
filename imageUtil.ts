@@ -10,7 +10,7 @@
  * @param pasteEvent
  * @param callback
  */
-export function retrieveImageFromClipboardAsFile(pasteEvent, callback, imageFormat) {
+export function retrieveImageFromClipboardAsFile(pasteEvent: any, callback: any) {
     if (pasteEvent.clipboardData == false) {
         if (typeof (callback) === 'function') {
             callback(undefined);

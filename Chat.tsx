@@ -216,7 +216,7 @@ export default function Chat() {
             if (file) {
                 setListPreview((list) => [...list, { id: uuid.v4(), file }]);
             }
-        }, false);
+        });
     };
 
     return (
